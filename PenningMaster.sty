@@ -1,0 +1,85 @@
+\usepackage{amsmath, amsthm, amsfonts, amssymb, upgreek}
+%\ProvidesPackage{PenningMaster}
+
+% If there a command is an operator name, the first leter should be capitolized.
+% Otherwise, the command should be all lowercase.
+\newcommand{\ihat}{\hat{\textbf{\i}}}
+\newcommand{\jhat}{\hat{\textbf{\j}}}
+\newcommand{\khat}{\hat{\textbf{\j}}}
+
+\renewcommand{\labelitemii}{\textasteriskcentered}
+
+% Add common Sets
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Add Powerset notations
+\newcommand{\Pw}[1]{\mathcal{P}(#1)}
+\newcommand{\Pp}{\mathcal{P}} 
+
+% Add new operators
+\newcommand{\qe}{\overset{?}{=}}
+\newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\of}{\circ}
+\newcommand{\then}{\rightarrow}
+
+% Add Set properties
+\newcommand{\Dom}{\operatorname{Dom}}
+\newcommand{\Codom}{\operatorname{Codom}}
+\newcommand{\Range}{\operatorname{Range}}
+\newcommand{\Card}{\operatorname{Card}}
+\newcommand{\card}[1]{\left\vert#1\right\vert}
+
+% Set Theory Stuff
+\newcommand{\rr}{\mathbf r}
+\renewcommand{\ss}{\mathbf s}
+\newcommand{\nn}{\mathbf n}
+\newcommand{\mm}{\mathbf m}
+\newcommand{\tb}{\mathbf t}
+\newcommand{\Ab}{\mathbb A}
+\newcommand{\Abn}{\cancel{\Ab}}
+\newcommand{\es}{\emptyset}
+\newcommand{\orderabove}{\triangleright}
+\newcommand{\orderbelow}{\triangleleft}
+\newcommand{\Ac}{\mathcal A}
+\newcommand{\an}{{\aleph_0}}
+\newcommand{\nQQ}{\cancel{\QQ}}
+
+% 4108 Stuff
+\newcommand{\zero}{\mathbf 0}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\degof}[1]{\partial\left(#1\right)}
+\newcommand{\gen}[1]{\left\langle#1\right\rangle}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\e}{\epsilon}
+
+% 4803 Stuff
+\newcommand{\T}{\mathcal T}
+\newcommand{\U}{\mathcal U}
+\newcommand{\BS}{\operatorname{BS}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\SYM}{\operatorname{SYM}}
+\newcommand{\vtwo}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array} \right)}
+\newcommand{\farey}{\mathcal F}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\normalclosure}[1]{\left\langle\left\langle#1\right\rangle\right\rangle}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\Ord}{\operatorname{Ord}}
+
+% 4699 Stuff
+\newcommand{\FF}{\mathbb F}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\Supp}{\operatorname{Supp}}
+
+% Added from default Preamble.
+\newcommand{\cys}[1]{\left\langle#1\right\rangle}
+\newcommand{\Lcm}{\operatorname{Lcm}}
+\newcommand{\xx}{\mathbf x}
+
+% Add Matrix Commands
+\newcommand{\twotwo}[4]{\begin{array}#1&#2\\#3&#4\end{array}}
