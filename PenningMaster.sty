@@ -9,96 +9,131 @@
 
 \renewcommand{\labelitemii}{\textasteriskcentered}
 
-% Add common Sets
-\newcommand{\NN}{\mathbb{N}}
-\newcommand{\ZZ}{\mathbb{Z}}
-\newcommand{\QQ}{\mathbb{Q}}
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\CC}{\mathbb{C}}
+% Operator Names
+    %Sets
+        \newcommand{\Dom}{\operatorname{Dom}}
+        \newcommand{\Codom}{\operatorname{Codom}}
+        \newcommand{\Range}{\operatorname{Range}}
+        \newcommand{\Card}{\operatorname{Card}}
+        \newcommand{\Ord}{\operatorname{Ord}}
+        \newcommand{\BS}{\operatorname{BS}} %Baumslag Solitar
+    %Algebraic objects
+        \newcommand{\Aut}{\operatorname{Aut}}
+        \newcommand{\Gal}{\operatorname{Gal}}
+        \newcommand{\Ker}{\operatorname{Ker}}
+        \newcommand{\Inn}{\operatorname{Inn}}
+        \newcommand{\Out}{\operatorname{Out}}
+        \newcommand{\Stab}{\operatorname{Stab}}
+        \newcommand{\SYM}{\operatorname{SYM}}
+        \newcommand{\id}{\operatorname{id}}
+    %Geometric Combinatorics
+        \newcommand{\Supp}{\operatorname{Supp}} % Support
+    % Number Theory
+        \newcommand{\Lcm}{\operatorname{Lcm}}
+        \newcommand{\Gcd}{\operatorname{Gcd}}
+    % Analysis
+        \newcommand{\Sup}{\operatornamewithlimits{Sup}}
+        \newcommand{\Inf}{\operatornamewithlimits{Inf}}
+    % Topology
+        \newcommand{\Ball}{\operatorname{Ball}}
+        \newcommand{\Mod}{\operatorname{Mod}}
+        \newcommand{\Modpm}{\operatorname{Mod}^{\pm}}
 
-% Add Powerset notations
-\newcommand{\Pw}[1]{\mathcal{P}(#1)}
-\newcommand{\Pp}{\mathcal{P}} 
+% Add common Sets
+    \newcommand{\CC}{\mathbb{C}}
+    \newcommand{\FF}{\mathbb{F}}
+    \newcommand{\HH}{\mathbb{H}}
+    \newcommand{\NN}{\mathbb{N}}
+    \newcommand{\QQ}{\mathbb{Q}}
+    \newcommand{\RR}{\mathbb{R}}
+    \newcommand{\RRnn}{\RR_{\geq 0}} %[n]on[n]egative Reals
+    \newcommand{\RRnp}{\RR_{\leq 0}} %[n]on[p]ositive Reals
+    \newcommand{\RRn}{\RR_{<0}} % [n]egative Reals
+    \newcommand{\RRp}{\RR_{>0}} % [p]ositive Reals
+    \newcommand{\ZZ}{\mathbb{Z}}
+    \newcommand{\ZZnn}{\ZZ_{\geq 0}} %[n]on[n]egative Integers
+    \newcommand{\ZZnp}{\ZZ_{\leq 0}} %[n]on[p]ositive Integers
+    \newcommand{\ZZn}{\ZZ_{<0}} % [n]egative Integers
+    \newcommand{\ZZp}{\ZZ_{>0}} % [p]ositive Integers
+
+% Add Mathcal words
+    \newcommand{\Aa}{\mathcal{A}}
+    \newcommand{\Oo}{\mathcal{O}}
+    \newcommand{\Pp}{\mathcal{P}} 
+    \newcommand{\Tt}{\mathcal{T}}
+    \newcommand{\Uu}{\mathcal{U}}
 
 % Add new operators
-\newcommand{\qe}{\overset{?}{=}}
-\newcommand{\cbrt}[1]{\sqrt[3]{#1}}
-\newcommand{\inv}[1]{#1^{-1}}
-\newcommand{\of}{\circ}
-\newcommand{\then}{\rightarrow}
-
-% Add Set properties
-\newcommand{\Dom}{\operatorname{Dom}}
-\newcommand{\Codom}{\operatorname{Codom}}
-\newcommand{\Range}{\operatorname{Range}}
-\newcommand{\Card}{\operatorname{Card}}
-\newcommand{\card}[1]{\left\vert#1\right\vert}
+    % Surround something
+        \newcommand{\card}[1]{\left\vert#1\right\vert}
+        \newcommand{\gen}[1]{\left\langle#1\right\rangle}
+        \newcommand{\normalclosure}[1]{\left\langle\left\langle#1\right\rangle\right\rangle}
+        \newcommand{\cmpof}[1]{#1^{c}} %complement
+        \newcommand{\intof}[1]{#1^{\circ}} %interior of
+        \newcommand{\cys}[1]{\left\langle#1\right\rangle}
+        \newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
+        \newcommand{\ceil}[1]{\left\lceil{#1}\right\rceil}
+    % raise to exponent
+        \newcommand{\inv}[1]{#1^{-1}}
+        \newcommand{\close}[1]{\overline{#1}}
+        \newcommand{\cmp}[1]{\overline{#1}}
+        \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+    % Correctly named symbols
+        \newcommand{\farey}{\mathcal F}
+        \newcommand{\normto}{\triangleleft}
+        \newcommand{\normover}{\trinangleright}
+        \newcommand{\qe}{\overset{?}{=}}
+        \newcommand{\of}{\circ}
+        \newcommand{\then}{\rightarrow}
+        \newcommand{\orderabove}{\triangleright}
+        \newcommand{\orderbelow}{\triangleleft}
+        \newcommand{\homeoto}{\cong}
+        \newcommand{\htopto}{\simeq}
+        \newcommand{\isoto}{\approx}
+        \newcommand{\bound}{\partial}
+    % Functions
+        \newcommand{\degof}[1]{\partial\left(#1\right)} % Degree of
+        \newcommand{\Pw}[1]{\mathcal{P}\left(#1\right)} % power set of
 
 % Set Theory Stuff
-\newcommand{\rr}{\mathbf r}
-\renewcommand{\ss}{\mathbf s}
-\newcommand{\nn}{\mathbf n}
-\newcommand{\mm}{\mathbf m}
-\newcommand{\tb}{\mathbf t}
-\newcommand{\Ab}{\mathbb A}
-\newcommand{\Abn}{\cancel{\Ab}}
-\newcommand{\es}{\emptyset}
-\newcommand{\orderabove}{\triangleright}
-\newcommand{\orderbelow}{\triangleleft}
-\newcommand{\Ac}{\mathcal A}
-\newcommand{\an}{{\aleph_0}}
-\newcommand{\nQQ}{\cancel{\QQ}}
+    \newcommand{\Abn}{\cancel{\Ab}}
+    \newcommand{\Ab}{\mathbb A}
+    \newcommand{\Ac}{\mathcal A}
+    \newcommand{\an}{{\aleph_0}}
+    \newcommand{\es}{\emptyset}
+    \newcommand{\mm}{\mathbf m}
+    \newcommand{\nQQ}{\cancel{\QQ}}
+    \newcommand{\nn}{\mathbf n}
+    \newcommand{\rr}{\mathbf r}
+    \newcommand{\tb}{\mathbf t}
+    \renewcommand{\ss}{\mathbf s}
 
-% 4108 Stuff
+
 \newcommand{\zero}{\mathbf 0}
 \newcommand{\one}{\mathbf 1}
-\newcommand{\degof}[1]{\partial\left(#1\right)}
-\newcommand{\gen}[1]{\left\langle#1\right\rangle}
-\newcommand{\Aut}{\operatorname{Aut}}
-\newcommand{\Gal}{\operatorname{Gal}}
-\newcommand{\e}{\epsilon}
 
-% 4803 Stuff
-\newcommand{\T}{\mathcal T}
-\newcommand{\U}{\mathcal U}
-\newcommand{\BS}{\operatorname{BS}}
-\newcommand{\Stab}{\operatorname{Stab}}
-\newcommand{\SYM}{\operatorname{SYM}}
-\newcommand{\vtwo}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array} \right)}
-\newcommand{\farey}{\mathcal F}
-\newcommand{\Ker}{\operatorname{Ker}}
-\newcommand{\normalclosure}[1]{\left\langle\left\langle#1\right\rangle\right\rangle}
-\newcommand{\id}{\operatorname{id}}
-\newcommand{\Ord}{\operatorname{Ord}}
 
-% 4699 Stuff
-\newcommand{\FF}{\mathbb F}
-\newcommand{\ord}{\operatorname{ord}}
-\newcommand{\Supp}{\operatorname{Supp}}
-
-% Added from default Preamble.
-\newcommand{\cys}[1]{\left\langle#1\right\rangle}
-\newcommand{\Lcm}{\operatorname{Lcm}}
 \newcommand{\xx}{\mathbf x}
 
 % Add Matrix Commands
-\newcommand{\twotwo}[4]{\begin{array}{cc}{#1}&{#2}\\{#3}&{#4}\end{array}}
+    \newcommand{\twotwo}[4]{\begin{array}{cc}{#1}&{#2}\\{#3}&{#4}\end{array}}
+    \newcommand{\vtwo}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array} \right)}
+    \newcommand{\SL}[2]{\operatorname{SL}_{#1}({#2})}
+    \newcommand{\GL}[2]{\operatorname{GL}_{#1}({#2})}
 
 % Topology
-\newcommand{\Sup}{\operatornamewithlimits{Sup}}
-\newcommand{\Inf}{\operatornamewithlimits{Inf}}
-\newcommand{\close}[1]{\overline{#1}}
-\newcommand{\Ball}{\operatorname{Ball}}
-\newcommand{\homeoto}{\cong}
-\newcommand{\htopto}{\simeq}
-\newcommand{\closeBall}[2]{\close{\Ball_{#1}\!\left({#2}\right)}}
-\newcommand{\Bound}{\partial}
+    \newcommand{\closeBall}[2]{\close{\operatorname{Ball}_{#1}\!\left({#2}\right)}} %\closeBall{Center point}{Radius}
+    \newcommand{\openBall}[2]{\close{\operatorname{Ball}^\circ_{#1}\!\left({#2}\right)}} %\openBall{Center point}{Radius}
 
-% Analysis
-\newcommand{\RRn}{\RR_{<0}} % [n]egative Reals
-\newcommand{\RRp}{\RR_{>0}} % [p]ositive Reals
-\newcommand{\RRnn}{\RR_{\geq 0}} %[n]on[n]egative Reals
-\newcommand{\RRnp}{\RR_{\leq 0}} %[n]on[p]ositive Reals
+% Figure out how to use big * later
+    %\DeclareMathOperator*{\foo}{\scalerel*{\maltese}{\sum}}
 
-%
+
+% Single letter greek representatives
+\newcommand{\d}{\delta}
+\newcommand{\e}{\epsilon}
+
+% Spacing
 \newcommand{\qimpliesq}{\quad\implies\quad}
+
+
