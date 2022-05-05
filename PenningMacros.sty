@@ -51,6 +51,7 @@
     \newcommand{\RRn}{\RR_{<0}} % [n]egative Reals
     \newcommand{\RRp}{\RR_{>0}} % [p]ositive Reals
     \newcommand{\ZZ}{\mathbb{Z}}
+    \newcommand{\ZZnz}{\mathbb{Z}_{\neq 0}} %[n]on [z]ero Integers
     \newcommand{\ZZnn}{\ZZ_{\geq 0}} %[n]on[n]egative Integers
     \newcommand{\ZZnp}{\ZZ_{\leq 0}} %[n]on[p]ositive Integers
     \newcommand{\ZZn}{\ZZ_{<0}} % [n]egative Integers
@@ -73,11 +74,14 @@
         \newcommand{\cys}[1]{\left\langle#1\right\rangle}
         \newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
         \newcommand{\ceil}[1]{\left\lceil{#1}\right\rceil}
+        \newcommand{\m}[1]{\left[{#1}\right]} %denote conjugacy class
+        \newcommand{\class}[1]{\left[{#1}\right]} %denote conjugacy class
     % raise to exponent
         \newcommand{\inv}[1]{#1^{-1}}
         \newcommand{\close}[1]{\overline{#1}}
         \newcommand{\intr}[1]{{#1}^\circ}
         \newcommand{\cmp}[1]{\overline{#1}}
+        \newcommand{\conj}[1]{\overline{#1}}
         \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
     % Correctly named symbols
         \newcommand{\farey}{\mathcal F}
@@ -121,6 +125,7 @@
     \newcommand{\vtwo}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array} \right)}
     \newcommand{\SL}[2]{\operatorname{SL}_{#1}({#2})}
     \newcommand{\GL}[2]{\operatorname{GL}_{#1}({#2})}
+    \newcommand{\mat}[2]{\mathcal{M}_{#1}({#2})}
 
 % Topology
     \newcommand{\closeBall}[2]{\close{\operatorname{Ball}_{#1}\!\left({#2}\right)}} %\closeBall{Center point}{Radius}
