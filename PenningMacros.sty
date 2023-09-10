@@ -38,6 +38,8 @@
         \newcommand{\Ball}{\operatorname{Ball}}
         \newcommand{\Mod}{\operatorname{Mod}}
         \newcommand{\Modpm}{\operatorname{Mod}^{\pm}}
+    % Products
+        \newcommand{\tp}{\otimes}
 
 % Add common Sets
     \newcommand{\CC}{\mathbb{C}}
@@ -73,11 +75,15 @@
         \newcommand{\cys}[1]{\left\langle#1\right\rangle}
         \newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
         \newcommand{\ceil}[1]{\left\lceil{#1}\right\rceil}
+        \newcommand{\bra}[1]{\left\langle{#1}\right\vert}
+        \newcommand{\ket}[1]{\left\vert{#1}\right\rangle}
     % raise to exponent
         \newcommand{\inv}[1]{#1^{-1}}
         \newcommand{\close}[1]{\overline{#1}}
         \newcommand{\cmp}[1]{\overline{#1}}
         \newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+        \newcommand{\adj}[1]{#1^{\dagger}}
+        \newcommand{\cc}[1]{#1^{*}}
     % Correctly named symbols
         \newcommand{\farey}{\mathcal F}
         \newcommand{\normto}{\triangleleft}
@@ -117,7 +123,8 @@
 
 % Add Matrix Commands
     \newcommand{\twotwo}[4]{\begin{array}{cc}{#1}&{#2}\\{#3}&{#4}\end{array}}
-    \newcommand{\vtwo}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array} \right)}
+    \newcommand{\threethree}[9]{\begin{array}{ccc}{#1}&{#2}&{#3}\\{#4}&{#5}&{#6}\\{#7}&{#8}&{#9}\end{array}}
+    \newcommand{\vtwo}[2]{\left[ \begin{array}{c} #1 \\ #2 \end{array} \right]}
     \newcommand{\SL}[2]{\operatorname{SL}_{#1}({#2})}
     \newcommand{\GL}[2]{\operatorname{GL}_{#1}({#2})}
 
