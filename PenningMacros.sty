@@ -128,6 +128,20 @@
     \newcommand{\SL}[2]{\operatorname{SL}_{#1}({#2})}
     \newcommand{\GL}[2]{\operatorname{GL}_{#1}({#2})}
 
+% Commonly used Matrices
+    % Identity
+    \newcommand{\igate}{\left[\twotwo{1}{0}{0}{1}\right]}
+    % Hadamard
+    \newcommand{\hgate}{\frac{1}{\sqrt{2}}\left[\twotwo{1}{1}{1}{-1}\right]}
+    % Pauli XYZ
+    \newcommand{\xgate}{\left[\twotwo{0}{1}{1}{0}\right]}
+    \newcommand{\ygate}{\left[\twotwo{0}{-i}{i}{0}\right]}
+    \newcommand{\zgate}{\left[\twotwo{1}{0}{0}{-1}\right]}
+    % Phase
+    \newcommand{\sgate}{\left[\twotwo{1}{0}{0}{i}\right]}
+    % \pi / 8
+    \newcommand{\tgate}{\left[\twotwo{1}{0}{0}{e^{i\pi/4}}\right]}
+
 % Topology
     \newcommand{\closeBall}[2]{\close{\operatorname{Ball}_{#1}\!\left({#2}\right)}} %\closeBall{Center point}{Radius}
     \newcommand{\openBall}[2]{\close{\operatorname{Ball}^\circ_{#1}\!\left({#2}\right)}} %\openBall{Center point}{Radius}
